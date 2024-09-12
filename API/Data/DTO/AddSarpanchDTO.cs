@@ -1,4 +1,4 @@
-﻿namespace API.Data.DTO
+﻿ namespace API.Data.DTO
 {
     public interface getSarpanchDTO
     {
