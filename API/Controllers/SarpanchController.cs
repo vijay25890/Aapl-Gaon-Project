@@ -33,8 +33,8 @@ namespace API.Controllers
         }
 
         [HttpDelete]
-        [Route("delete-sarpanch-user")]
-        public async Task<IActionResult> DeleteSarpanchUsers([FromBody] string Id)
+        [Route("delete-sarpanch-user/{Id}")]
+        public async Task<IActionResult> DeleteSarpanchUsers([FromRoute] string Id)
         {
             // Find the user by Id
             var identityUser = await userManager.Users.FirstOrDefaultAsync(e => e.Id == Id);

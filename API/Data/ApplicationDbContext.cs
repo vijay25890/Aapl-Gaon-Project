@@ -11,5 +11,8 @@ namespace BackendApi.Data
         }
 		
 		public DbSet<ApplicationLogs> ApplicationLogs { get; set; }
+		public DbSet<Locations> Locations { get; set; }
+        // Add-Migration -c ApplicationDbContext
+        // Update-Database -Context ApplicationDbContext
     }
 }
